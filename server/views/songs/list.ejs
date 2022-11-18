@@ -1,0 +1,54 @@
+<%- include ../partials/header.ejs %>
+<%- include ../partials/main_nav.ejs %>
+
+<!-- Main Content -->
+
+<div class="container">
+<div class="row">
+<div class= "col-md-offset-3 col-md-12">
+<h1>Song's List</h1>
+
+<a href = "/songslist/add" class="btn btn-primary" role="button">
+<i class = "fas fa-plus-circle"></i> Add a song</a>
+<br>
+<br>
+<div class="table-responsive">
+<table class= "table table-bordered table-striped table-hover" class="table align-middle">
+<tr>
+<th class = "text-center col-2">Name </th>
+<th class = "text-center col-2">Artist </th>
+<th class = "text-center col-1">Released </th>
+<th class = "text-center col -5">Description </th>
+<th class = "text-center col -3"> </th>
+<th class = "text-center col -3"> </th>
+</tr class="align-bottom">
+<% for(let count=0; count<Songslist.length; count++) { %>
+<tr>
+<td class="align-top" class="text-center col-2" ><%= Songslist[count].Name %></td>
+<td class="align-top" class="text-center col-2"><%= Songslist[count].Artist %></td>
+<td class="align-top" class="text-center col-1"><%= Songslist[count].Released %></td>
+<td class="align-top" class="text-center col- 8"><%= Songslist[count].Description %></td>
+<td class="align-top" class="text-center col- 2">
+<a href = "/Songs/edit/<%= Songslist[count]._id %>"
+class="btn btn-primary"
+<i class =" fas fa-pencil-alt"></i> Edit </a>
+</td>
+<td class="align-top" class="text-center col- 2">
+<a href = "/Songslist/delete/<%= Songslist[count]._id %>"
+class="btn btn-danger"
+<i class =" fas fa-trash-alt"></i> Delete </a>
+</td>
+
+</tr >
+
+<%}%>
+
+</table>
+</div>
+</div>
+</div>
+</div>
+</main>
+
+<%- include ../partials/bottom_nav.ejs %> 
+<%- include ../partials/footer.ejs %>

@@ -1,0 +1,24 @@
+<%- include partials/header.ejs %>
+<%- include partials/main_nav.ejs %>
+
+<!-- Main Content -->
+<main>
+<% if (title  == "Home") { %>
+          <%- include main/home.ejs %>
+   <%}%>
+   <%if (title == "Portfolio") {%>
+           <%- include main/home.ejs %>
+   <% } %>
+    <%if (title == "Contact") {%>
+           <%- include main/contactme.ejs %>
+   <% } %>
+      <%if (title == "Songs") {%>
+           <%- include songs/list.ejs %>
+   <% } %>
+   %>
+</main>
+
+<%- include partials/bottom_nav.ejs %> 
+<%- include partials/footer.ejs %>
+
+

@@ -1,0 +1,144 @@
+@charset "UTF-8"; 
+    /* CSS Document */ 
+    /* The body tag style applies to all elements on the page */ 
+    body { 
+        background: linear-gradient(45deg, #999795, #e0dbdb);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    padding:0px; 
+    margin:0px; 
+   
+    } 
+    /* The wrapper ID style is used with a div tag to provide a 960px wide page */ 
+   
+    /* The right-column ID style is floated right */ 
+    #right-column { 
+    float: right; 
+    width: 600px;height: 600px; 
+    background-color:LightGray; 
+    } 
+    /* The left-column ID style is floated left */ 
+    #left-column { 
+    float: left; 
+    width: 360px;background-color:silver; 
+    height:600px; 
+    } 
+    #leftcolumn { 
+        float: left; 
+        width: 400px;background-color:#b7ad8b; 
+        height:600px; 
+        } 
+
+    /* Defining a style for a set of tags separated by commas applies the style to 
+    all tags */ 
+    h1,h2,h3,h4,h5,h6,p,li { 
+    margin-left:15px; 
+    font-size: large;
+    } 
+    #footer { 
+    height:80px; 
+    } 
+    /* Defining a style for a set of tags not separated by commas applies the style 
+    only to all tags within the preceding tag*/ 
+    #banner h1 { 
+    color:#B8AE9C; 
+    margin-top: 20px;
+    }
+/*This is the styling for the logo*/
+    .web-logo{
+        width: 100px;
+        margin-left: 15px;
+        margin-top: 15px;
+        float : left;
+     
+    }
+ /*This is where the styling for the navigation bar is. The elements "Home", "About Me", "Contact", "Projects" habe been shifted to the right side of the page*/  
+
+        /*Formatting the picture of me*/
+        .blvd{
+            width: 300px;
+            float: right;
+            margin-left: 50px;
+            margin-right: 110px;
+            margin-top: 50px;
+        }
+        .palmmute{
+            margin-left: 50px;
+            height: fit-content;
+            
+        }
+        .animation{
+           float: right;
+            width: 300px;
+            margin-top: 50px;
+            margin-left: 110px;
+    
+        }
+        
+        h1{
+            text-align: center;
+            margin-top: 100px;
+            margin-bottom: 50px;
+            color: #080808;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+        }
+        p{
+            text-align: center;
+            color: #ffffff;
+        }
+        
+        .wrapper {
+            position: relative;
+            text-align: center;
+            color: white;
+            height: fit-content;
+        }
+       #wrapper{
+        position: relative;
+        text-align:left;
+        color: #B8AE9C;
+       }
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #B8AE9C;
+          
+          }
+        .notcentered{
+            position: relative;
+            top: 100%;
+            left: 40%;
+            bottom: 80%;
+            transform: translate(-40%, -100%);
+            color: #B8AE9C;
+            height:fit-content;
+        }
+        .notcentered b {
+            position: relative;
+            top: -100px;
+            color: #B8AE9C;
+            width: fit-content;
+            height: fit-content;
+        }
+        .notcentered h1 {
+            position: relative;
+            top: -100px;
+            left: 70px;
+            color: #B8AE9C;
+            width: fit-content;
+            height: fit-content;
+        }
+        
+        #date{
+            text-align: center;
+        }
+     
+     .gradient{
+        background: linear-gradient(45deg, #b0a986, #312e2e);
+     }
+    /* This clear class style terminates float */ 
+    .clear{ 
+    clear: both; 
+    }
